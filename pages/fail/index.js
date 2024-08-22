@@ -27,6 +27,7 @@ const PaymentFail = () => {
         <Link
           href={"/dashboard/superadmin/my-orders"}
           className={classes.retryButton}
+          style={{ color: "white", marginTop: 20 }}
         >
           Retry Payment
         </Link>

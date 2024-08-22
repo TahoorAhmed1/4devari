@@ -31,6 +31,7 @@ const PaymentThankYou = () => {
         <Link
           href={"/dashboard/superadmin/overview"}
           className={classes.thankyouButton}
+          style={{ color: "white", marginTop: 20 }}
         >
           Continue Shopping
         </Link>
