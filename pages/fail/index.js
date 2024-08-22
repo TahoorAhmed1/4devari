@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./fail.module.css";
 import { RiCloseCircleFill } from "react-icons/ri";
-import Link from "next/navigation";
+import Link from "next/link";
 
 const PaymentFail = () => {
   return (
