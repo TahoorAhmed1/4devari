@@ -110,7 +110,7 @@ function AdminDashboard() {
     },
     {
       id: 11,
-      name: "user",
+      name: "User",
       src: account_settings.src,
       src_2: account_settings_blue.src,
       link: "user",
