@@ -20,9 +20,7 @@ const User = () => {
         subtype: item.property.subtype,
         installmentAvailable: item.property.installmentAvailable ? "Yes" : "No",
         possessionStatus: item.property.possessionStatus ? "Yes" : "No",
-        availableFrom: new Date(
-          item.property.availableFrom
-        ).toLocaleDateString(),
+        availableFrom: item.property.availableFrom,
         address: item.property.location,
         image: item.property.images[0],
         price: item.property.price,
