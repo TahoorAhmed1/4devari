@@ -1,0 +1,173 @@
+.builder_plans_container {
+    padding-top: 120px;
+    padding-bottom: 100px;
+    
+    .main_heading {
+      font-size: 24px;
+      padding-bottom: 50px;
+    }
+    .details_container {
+      width: 85%;
+      margin: auto;
+      .plan_card_heading {
+        padding: 20px 30px;
+        //   text-align: center;
+        font-weight: 600;
+        font-size: 20px;
+      }
+      .owner_plans {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+  
+        .card_1 {
+          border: 1px solid #098441;
+          background-color: #f2fff5;
+        }
+        .card_2 {
+          border: 1px solid #e1b368;
+          background-color: #f2eee8;
+        }
+  
+        .plan_card {
+          position: relative;
+          border-radius: 25px;
+          padding-top: 20px;
+          .circle_img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: -10px;
+          }
+          .cards_lists {
+            height: 840px;
+            padding: 0px 30px;
+            .list_inner_data {
+              border-bottom: 1px solid #15151526;
+              .list_data {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding: 8px 0px;
+                border-top: 1px solid #15151526;
+                // border-bottom: 1px solid #15151526;
+                img {
+                }
+                p {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+          .bottom_box {
+            border-radius: 25px;
+            margin-top: 70px;
+            padding: 40px 30px;
+            position: relative;
+            background: linear-gradient(180deg, #098843 0%, #047538 100%);
+            .style1 {
+              border: 2px solid #004439;
+            }
+            .style2 {
+              border: 2px solid #ed9c5f;
+            }
+            .circle_img_bottom {
+              background-color: white;
+              cursor: pointer;
+              width: 100px;
+              height: 100px;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              position: absolute;
+              right: 10%;
+              top: -50px;
+            }
+            .prices_main_white {
+              padding-bottom: 30px;
+              .prices_data {
+                display: flex;
+                align-items: center;
+                span {
+                  font-weight: 500;
+                  font-size: 15px;
+                  color: white;
+                }
+                h3 {
+                  color: white;
+                  font-size: 24px;
+                }
+              }
+            }
+            .prices_main_black {
+              padding-bottom: 30px;
+              .prices_data {
+                display: flex;
+                align-items: center;
+                span {
+                  font-weight: 500;
+                  font-size: 15px;
+                  color: white;
+                }
+                h3 {
+                  font-size: 24px;
+                }
+              }
+            }
+          }
+          .plans_buy_btn {
+            width: 100%;
+            background-color: white;
+            color: #004439;
+            font-weight: 600;
+            font-size: 15px;
+            border-radius: 10px;
+            height: 43px;
+            outline: none;
+            border: none;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 1150px) {
+    .owner_plans {
+      grid-template-columns: 1fr 1fr !important;
+      row-gap: 80px !important;
+    }
+    .plan_card {
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .owner_plans {
+      grid-template-columns: 1fr !important;
+    }
+    .list_data {
+        p {
+            font-size: 12px;
+        }
+    }
+  }
+  @media screen and (max-width: 575px) {
+    .list_data {
+        p {
+            font-size: 10px;
+        }
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .list_data {
+        p {
+            font-size: 8px;
+        }
+    }
+  }
+  

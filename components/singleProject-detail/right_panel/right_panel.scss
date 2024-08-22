@@ -1,0 +1,99 @@
+.right_panel_container {
+  width: 90%;
+  display: flex;
+  margin: auto;
+  align-self: flex-start;
+  flex-direction: column;
+  margin-bottom: 40px;
+  gap: 21px;
+  .right_panel_project_price {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 21px;
+
+    .right_panel_price,
+    .right_panel_status {
+      border-radius: 25px;
+      border: 1px solid #dddbdb;
+      flex-direction: column;
+      display: flex;
+      justify-content: center;
+      background: linear-gradient(82deg, #004439 0.68%, #004439 100%);
+      width: 100%;
+      height: 120px;
+      color: white;
+      p {
+        margin-left: 30px;
+        font-size: 16px;
+        font-weight: 500;
+      }
+      h5 {
+        margin-left: 30px;
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
+    .right_panel_status {
+      border: 1px solid rgba(221, 219, 219, 0.25);
+      background: rgba(21, 21, 21, 0.1);
+      p {
+        color: #004439;
+      }
+      h5 {
+        color: #151515;
+      }
+    }
+  }
+  .top_btn_container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    border: 1px solid #dddbdb;
+    background: #fbfbfb;
+    padding: 27px;
+    gap: 11px;
+    button,
+    a {
+      display: flex;
+      padding: 10px 20px;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      gap: 15px;
+      font-weight: 500;
+      font-size: 15px;
+      border-radius: 10px;
+      background: #004439;
+      border: none;
+      color: white;
+      &:nth-child(2n) {
+        background: transparent;
+        border: 1px solid #004439;
+        color: #004439;
+      }
+    }
+  }
+  .inquire,
+  .report {
+    display: flex;
+    padding: 10px 0px;
+    width: 100%;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    align-items: center;
+    gap: 15px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(89deg, #151515 0%, #413e3e 100%);
+  }
+  .report {
+    border-radius: 10px;
+    font-weight: 600;
+    border: 1px solid #004439;
+    background: #fff;
+    color: #004439;
+  }
+}

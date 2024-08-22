@@ -1,0 +1,88 @@
+/* fail.module.css */
+
+.failContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8d7da;
+    padding: 20px;
+}
+
+.failCard {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.failCard:hover {
+    transform: translateY(-10px);
+}
+
+.failIcon img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.failCard h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #e74c3c;
+}
+
+.failCard p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.errorDetails {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #e74c3c;
+}
+
+.contactLink {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.contactLink:hover {
+    text-decoration: underline;
+}
+
+.retryButton {
+    background: linear-gradient(to right, #e74c3c, #c0392b);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.retryButton:hover {
+    background: linear-gradient(to right, #c0392b, #e74c3c);
+}
+
+@media (max-width: 600px) {
+    .failCard {
+        padding: 20px;
+    }
+
+    .failCard h1 {
+        font-size: 2em;
+    }
+
+    .retryButton {
+        width: 100%;
+        padding: 15px;
+    }
+}

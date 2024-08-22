@@ -1,0 +1,108 @@
+.zilaay_agency_card {
+  // max-width: 266px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  .cardImg {
+    background-size: cover;
+    background-position: center;
+    min-height: 150px;
+    height: 150px;
+    width: 100%;
+    border-radius: 14px;
+    z-index: 1;
+  }
+  .agency_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    background-color: white;
+    border: 1px solid rgba(21, 21, 21, 0.15);
+    position: absolute;
+    z-index: 2;
+    top: 110px;
+  }
+  .text_content {
+    padding: 18px;
+    border-radius: 15px;
+    border: 1px solid rgba(21, 21, 21, 0.15);
+    padding-top: 115px;
+    margin-top: -65px;
+    height: 100%;
+    width: calc(100% - 36px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h4 {
+      color: #004439;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 21px;
+      white-space: wrap;
+    }
+    p {
+      color: #151515;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 21px;
+      text-align: center;
+    }
+    .line {
+      color: transparent;
+      margin: 15px 0px;
+      background-color: rgba(21, 21, 21, 0.356);
+      height: 0.25px;
+    }
+    .count_text {
+      display: flex;
+      margin-bottom: 20px;
+      justify-content: space-evenly;
+      margin-bottom: 20px;
+      .count {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        span {
+          text-align: center;
+          color: rgba(21, 21, 21, 0.5);
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 18px;
+        }
+      }
+    }
+    .btn_container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+
+      button,
+      a {
+        padding: 10px 12px;
+        border-radius: 5px;
+        border: 1px solid var(--primary);
+        background-color: var(--primary);
+        font-size: 12px !important;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        color: white;
+        &:nth-child(2) {
+          background-color: unset;
+          color: var(--primary);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "name": "zilow",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@react-google-maps/api": "^2.18.1",
+    "@reduxjs/toolkit": "^1.9.5",
+    "antd": "^5.20.1",
+    "axios": "^1.4.0",
+    "chart.js": "^4.3.0",
+    "cookies-next": "^3.0.0",
+    "country-state-city": "^3.2.1",
+    "dayjs": "^1.11.10",
+    "formik": "^2.4.1",
+    "jwt-decode": "^3.1.2",
+    "moment": "^2.30.1",
+    "next": "13.1.6",
+    "next-redux-wrapper": "^8.1.0",
+    "open-location-code": "^1.0.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-ga4": "^2.1.0",
+    "react-google-map-draw-filter": "^1.2.2",
+    "react-icons": "^5.3.0",
+    "react-intersection-observer": "^9.4.3",
+    "react-phone-input-2": "^2.15.1",
+    "react-places-autocomplete": "^7.3.0",
+    "react-redux": "^8.1.2",
+    "react-select": "^5.8.0",
+    "react-slick": "^0.29.0",
+    "react-tooltip": "^5.11.2",
+    "sass": "^1.66.1",
+    "scroll-into-view-if-needed": "^3.1.0",
+    "slick-carousel": "^1.8.1",
+    "yup": "^1.2.0",
+    "zilow": "file:"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "eslint": "8.34.0",
+    "eslint-config-next": "13.1.6"
+  }
+}

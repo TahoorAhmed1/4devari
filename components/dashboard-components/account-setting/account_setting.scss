@@ -1,0 +1,594 @@
+.main_setting_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  overflow-y: auto;
+  .google_input_field {
+    width: -webkit-fill-available;
+  }
+
+  .overlay {
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    top: 0;
+    opacity: 0.2;
+    background-image: linear-gradient(#004439, white);
+    z-index: 1;
+  }
+  .btnActive {
+    color: white !important;
+    background: #004439 !important;
+  }
+  .d_none {
+    display: none !important;
+  }
+  .content_container {
+    width: calc(100% - 70px);
+    margin: 40px auto 0px auto;
+    z-index: 100;
+    display: flex;
+    gap: 30px;
+    .left_container {
+      width: 100%;
+      .info_container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        max-width: 748px;
+        background-color: white;
+        padding: 15px;
+        border-radius: 25px;
+        border: 1px solid rgba(21, 21, 21, 0.15);
+
+        img {
+          border-radius: 100%;
+        }
+        .info_text {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          .profile_text {
+            gap: 5px;
+            display: flex;
+            flex-direction: column;
+            h3 {
+              color: #151515;
+              font-size: 20px;
+            }
+            p {
+              color: #151515;
+              font-size: 15px;
+              opacity: 0.5;
+            }
+          }
+          .id {
+            color: #004439;
+            font-size: 12px;
+            font-weight: 500;
+          }
+        }
+      }
+      .account_heading {
+        margin-top: 30px;
+        color: #004439;
+        font-size: 24px;
+        font-weight: 600;
+        scroll-margin-top: 20px;
+      }
+
+      .About_textarea {
+        display: flex;
+        height: 170px !important;
+        padding: 10px 15px;
+        outline: none;
+        flex-direction: column;
+        background-color: white;
+        row-gap: 10px;
+        resize: none;
+      }
+      .form_container {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        .dual_container {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          gap: 25px;
+        }
+        .select_field_container {
+          display: flex;
+          flex-direction: column;
+          row-gap: 10px;
+          -webkit-appearance: none;
+          width: 100%;
+          .styles_select {
+            display: flex;
+            -webkit-appearance: none;
+            background: transparent;
+            background-repeat: no-repeat;
+            border-radius: 10px;
+            /* background-color: white; */
+            select {
+              background-position-y: 20px;
+              background-position-x: calc(100% - 15px);
+              width: 100%;
+              background-color: white;
+              background-image: url("../../../public/assets/icons/drop_down.svg");
+              height: 45px;
+              cursor: pointer;
+              border-radius: 10px;
+              border: 1px solid rgba(21, 21, 21, 0.15);
+            }
+          }
+        }
+        .input_field_container {
+          display: flex;
+          flex-direction: column;
+          row-gap: 10px;
+          width: 100%;
+          .input_field {
+            border-radius: 10px;
+            border: 1px solid rgba(21, 21, 21, 0.15);
+            background: #fff;
+            height: 42px;
+            min-width: 90px !important;
+          }
+          .styles_select {
+            display: flex;
+            -webkit-appearance: none;
+            background: transparent;
+            background-image: url("../../../public/assets/icons/drop_down.svg");
+            background-repeat: no-repeat;
+            background-position-x: calc(100% - 15px);
+            background-position-y: 20px;
+            border-radius: 10px;
+            background-color: white;
+            select {
+              width: 100%;
+              height: 45px;
+              cursor: pointer;
+              border-radius: 10px;
+              border: 1px solid rgba(21, 21, 21, 0.15);
+            }
+          }
+        }
+        .label {
+          font-size: 16px;
+          font-family: "p-r";
+        }
+        .number_field_container {
+          p {
+            margin-bottom: 10px;
+          }
+        }
+        .upload_field_container {
+          display: flex;
+          flex-direction: column;
+          row-gap: 10px;
+          .ant-upload-select {
+            width: 100% !important;
+          }
+          .tick_container {
+            display: flex;
+            gap: 10px;
+            .tick_box {
+              color: #000;
+              font-size: 15px;
+              opacity: 0.5;
+            }
+          }
+          .upload_btn {
+            width: 100%;
+            margin-bottom: 20px;
+            &:disabled {
+              opacity: 0.5;
+              cursor: not-allowed;
+            }
+          }
+        }
+        .save_btn {
+          display: flex;
+          width: 200px;
+          padding: 10px 40px;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          align-self: center;
+          gap: 10px;
+          border-radius: 10px;
+          border: 1px solid #004439;
+          background: #004439;
+          color: #fff;
+          font-size: 14px;
+          margin-top: 15px;
+          &:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+          }
+        }
+        .divider {
+          width: 100%;
+          min-height: 1px;
+          background-color: #969ba5;
+          opacity: 0.3;
+          // margin: 30px 0px;
+        }
+        .ant-btn-default {
+          width: 100% !important;
+        }
+        .form_heading {
+          color: #004439;
+          font-size: 24px;
+          font-weight: 600;
+          scroll-margin-top: 20px;
+        }
+        .staff_container {
+          .staff_label {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 15px;
+          }
+          .staff_table {
+            table {
+              border-collapse: collapse;
+              width: 100%;
+              border-radius: 20px;
+              th,
+              td {
+                text-align: left;
+                padding: 10px 15px;
+                white-space: nowrap;
+                &::-webkit-scrollbar {
+                  display: none;
+                }
+              }
+              .delete_container {
+                background-color: #dee6f4;
+                color: rgba(233, 0, 0, 0.75);
+                font-size: 14px;
+                font-weight: 400;
+                // width: 30px;
+                border-right: 1px solid white;
+                text-align: left;
+                padding: 10px 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+              .delete {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 11px 15px;
+                opacity: 1 !important;
+                height: 30px;
+                svg{
+                  cursor: pointer;
+                }
+              }
+              tr {
+                transition: 0.5s;
+              }
+              tr:hover {
+                background-color: #dddddd3f;
+              }
+
+              th {
+                background-color: #dee6f4;
+                color: rgba(21, 21, 21, 0.75);
+                font-size: 14px;
+                font-weight: 400;
+                border-right: 1px solid white;
+              }
+
+              td {
+                border-bottom: 1px solid #dddddd73;
+                color: rgba(21, 21, 21, 0.75);
+                font-size: 13px;
+                opacity: 0.5;
+                max-width: 100px;
+                min-width: 50px;
+                overflow-x: auto;
+              }
+            }
+          }
+        }
+        .preferences_container {
+          .preference {
+            .preferences_para {
+              color: #151515;
+              font-size: 14px;
+              margin-top: 14px;
+              opacity: 0.5;
+            }
+            .property_checkbox {
+              margin-top: 20px;
+              .switch {
+                font-size: 17px;
+                position: relative;
+                display: inline-block;
+                width: 46px;
+                height: 25px;
+              }
+              .slider {
+                position: absolute;
+                cursor: pointer;
+                margin-left: -3px;
+                inset: 0;
+                background: #bfbfbf; /* Set the background color */
+                border-radius: 50px;
+                transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                filter: url(#filter0_d_5004_3201); /* Apply the filter */
+              }
+              .slider::before {
+                position: absolute;
+                content: "";
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 23px;
+                width: 23px;
+                inset: 0;
+                background-color: white;
+                border-radius: 50px;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+                transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+              }
+              .switch input:checked + .slider {
+                background: #004439;
+              }
+              .switch input:focus + .slider {
+                box-shadow: 0 0 1px #bfbfbf;
+              }
+
+              .switch input:checked + .slider:before {
+                transform: translateX(1.6em);
+              }
+            }
+          }
+          .preference_divider {
+            width: 100%;
+            min-height: 1px;
+            background-color: #969ba5;
+            opacity: 0.3;
+            margin: 25px 0px;
+          }
+          .preference_units {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+          }
+        }
+      }
+    }
+    .right_container {
+      width: 100%;
+      max-width: 300px;
+      margin: 0px auto;
+      .btn_container {
+        max-width: 320px;
+        height: auto;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid rgba(21, 21, 21, 0.15);
+        background: #fff;
+        padding: 20px;
+        gap: 10px;
+        margin-bottom: 30px;
+        a {
+          display: flex;
+          padding: 10px 20px;
+          align-items: center;
+          border: none;
+          // white-space: nowrap;
+          outline: none;
+          color: rgba(21, 21, 21, 0.5);
+          gap: 10px;
+          border-radius: 10px;
+          background: rgba(21, 21, 21, 0.05);
+          cursor: pointer;
+        }
+      }
+      .seller_card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 30px;
+        h2 {
+          color: #151515;
+          font-size: 20px;
+          font-weight: 600;
+        }
+        .real_estate_container {
+          border-radius: 20px;
+          border: 1px solid #dddbdb;
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          background: linear-gradient(
+              180deg,
+              rgba(194, 146, 68, 0.05) 0%,
+              rgba(233, 188, 114, 0.05) 100%
+            ),
+            #fafafa;
+          &:nth-child(3) {
+            background: white;
+          }
+          .real_estate_content {
+            display: flex;
+            gap: 15px;
+            .real_estate_img {
+              border-radius: 15px;
+              border: 1px solid #cdd8ea;
+              overflow: hidden;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 100px;
+              height: 100px;
+            }
+            .estate_text_content {
+              h3 {
+                color: #151515;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 30px;
+              }
+              p {
+                color: #151515;
+                font-size: 10px;
+                font-weight: 400;
+                opacity: 0.5;
+              }
+            }
+            .gfs_text_content {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              .gfs_text {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                align-self: flex-end;
+                span {
+                  color: #004439;
+                  font-size: 16px;
+                  font-weight: 500;
+                }
+                p {
+                  opacity: 0.5;
+                  font-size: 12px;
+                  font-weight: 400;
+                }
+              }
+            }
+          }
+          .real_estate_btns {
+            display: flex;
+            gap: 5px;
+            button {
+              display: flex;
+              padding: 10px 12px;
+              width: 100%;
+              justify-content: center;
+              align-items: center;
+              white-space: nowrap;
+              gap: 15px;
+              border-radius: 5px;
+              border: 1px solid #004439;
+              color: #004439;
+              font-size: 10px;
+              font-weight: 500;
+              background: #fff;
+              cursor: pointer;
+              &:nth-child(2n) {
+                background: #004439;
+                color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1045px) {
+    .content_container {
+      width: calc(100% - 30px);
+    }
+    .info_container {
+      gap: 10px !important;
+    }
+  }
+  @media screen and (max-width: 810px) {
+    .overlay {
+      display: none;
+    }
+    .mob_heading {
+      padding-left: 15px;
+      border-bottom: 1px solid rgba(21, 21, 21, 0.171);
+      margin-top: 20px;
+      color: #004439;
+      font-size: 28px;
+      font-weight: 600;
+    }
+    .content_container {
+      flex-direction: column;
+      margin-top: 20px;
+      .right_container {
+        width: 100%;
+        .d_none_mob {
+          display: none;
+        }
+      }
+      .btn_container {
+        overflow-x: auto;
+        gap: 10px;
+        margin-bottom: 30px;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        a {
+          display: flex;
+          padding: 10px 20px;
+          align-items: center;
+          border: none;
+          outline: none;
+          white-space: nowrap;
+          color: rgba(21, 21, 21, 0.5);
+          gap: 10px;
+          border-radius: 10px;
+          background: rgba(21, 21, 21, 0.05);
+          cursor: pointer;
+        }
+      }
+    }
+    .d_none {
+      display: flex !important;
+    }
+  }
+  @media screen and (max-width: 520px) {
+    .info_text {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .dual_container {
+      flex-direction: column;
+    }
+    .staff_table {
+      overflow-x: auto;
+
+      table {
+        min-width: 500px;
+        td {
+          max-width: 100% !important;
+          overflow-x: unset !important;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 375px) {
+    .real_estate_content {
+      flex-direction: column;
+    }
+    .mob_heading {
+      font-size: 20px;
+    }
+    .profile_text {
+      p {
+        font-size: clamp(11px, 3.5vw, 15px) !important;
+      }
+    }
+    .real_estate_btns {
+      flex-wrap: wrap;
+    }
+  }
+}

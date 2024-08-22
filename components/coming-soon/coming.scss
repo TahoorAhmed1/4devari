@@ -1,0 +1,98 @@
+.zilaay_comning_soon_container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  //   background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px); /* Adjust the blur intensity as needed */
+  //   background-color: rgba(255, 255, 255, 0.5);
+  background: linear-gradient(
+    to right,
+    rgba(182, 244, 146, 0.493),
+    rgba(51, 139, 147, 0.486)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+
+  h1 {
+    font-size: clamp(40px, 5vw, 80px);
+    text-transform: uppercase;
+    color: white;
+    font-weight: bolder;
+    text-shadow: 3px 3px 20px #004439, -2px 1px 30px #3eb762;
+  }
+  p {
+    width: 50%;
+    text-align: center;
+    text-shadow: 3px 3px 20px #a5c4be, -2px 1px 30px #ffffff;
+    font-size: 16px;
+    color: #000000;
+    text-shadow: 2px 2px 5px #3eb762;
+  }
+  // a {
+  //   text-decoration: none;
+  //   color: inherit;
+  // }
+
+  // .cta {
+  //   position: relative;
+  //   // margin: auto;
+  //   padding: 19px 22px;
+  //   transition: all 0.5s ease;
+  //   &:before {
+  //     content: "";
+  //     position: absolute;
+  //     top: 7px;
+  //     left: 0;
+  //     display: block;
+  //     //   border-radius: 28px;
+  //     background: rgba(#3eb762, 1);
+  //     width: 120px;
+  //     height: 50px;
+  //     transition: all 0.5s ease;
+  //   }
+
+  //   span {
+  //     position: relative;
+  //     font-size: 16px;
+  //     line-height: 18px;
+  //     font-weight: 900;
+  //     letter-spacing: 0.25em;
+  //     text-transform: uppercase;
+  //     vertical-align: middle;
+  //   }
+
+  //   svg {
+  //     position: relative;
+  //     top: 0;
+  //     margin-left: 10px;
+  //     fill: none;
+  //     stroke-linecap: round;
+  //     stroke-linejoin: round;
+  //     stroke: $color;
+  //     stroke-width: 2;
+  //     transform: translateX(-5px);
+  //     transition: all 0.3s ease;
+  //   }
+
+  //   &:hover {
+  //     &:before {
+  //       width: 100%;
+  //       background: rgba(#004439, 1);
+  //     }
+  //     svg {
+  //       transform: translateX(0);
+  //       color: white !important;
+  //     }
+  //   }
+
+  //   &:active {
+  //     transform: scale(0.96);
+  //   }
+  // }
+}

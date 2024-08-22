@@ -1,0 +1,111 @@
+.container {
+  width: 100%;
+  height: fit-content;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  max-width: 1800px;
+}
+.tabs_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border-bottom: 2px solid #cdd8ea;
+  overflow-x: auto;
+}
+.single_tab,
+.single_tab_selected {
+  width: 100%;
+  text-align: center;
+  transition: ease-in-out 200ms;
+  padding-bottom: 15px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "p-sb";
+  min-width: 130px;
+  white-space: nowrap;
+}
+
+.single_tab {
+  color: rgb(133, 133, 133);
+  border-bottom: 4px solid transparent;
+  padding-top: 20px;
+}
+
+.single_tab_selected {
+  padding-top: 20px;
+  border-bottom: 4px solid var(--primary);
+}
+.links_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr .7fr;
+  height: 100%;
+  column-gap: 15px;
+}
+.col {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: flex-start; */
+  row-gap: 15px;
+  margin-top: 30px;
+}
+.col h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #151515;
+  font-family: "p-sb";
+}
+.single_link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 15px;
+  cursor: pointer;
+  width: fit-content;
+}
+.single_link p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #151515;
+  font-family: "p-l";
+  transition: color 0.3s ease;
+}
+.single_link:hover p {
+  color: var(--primary) !important;
+  font-weight: 600;
+
+}
+.single_link img {
+  width: 11px;
+}
+
+  @media screen and (max-width:1030px){
+    .links_container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+  @media screen and (max-width:600px){
+    .links_container {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    .col h2 {
+      margin-bottom: 4px;
+    }
+  }

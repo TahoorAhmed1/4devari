@@ -1,0 +1,87 @@
+/* success.module.css */
+
+.thankyouContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+    padding: 20px;
+}
+
+.thankyouCard {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.thankyouCard:hover {
+    transform: translateY(-10px);
+}
+
+.thankyouIcon img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.thankyouCard h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #004439;
+}
+
+.thankyouCard p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.orderNumber {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.contactLink {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.contactLink:hover {
+    text-decoration: underline;
+}
+
+.thankyouButton {
+    background: linear-gradient(to right, #004439, #004439);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.thankyouButton:hover {
+    background: linear-gradient(to right, #004439, #004439);
+}
+
+@media (max-width: 600px) {
+    .thankyouCard {
+        padding: 20px;
+    }
+
+    .thankyouCard h1 {
+        font-size: 2em;
+    }
+
+    .thankyouButton {
+        width: 100%;
+        padding: 15px;
+    }
+}

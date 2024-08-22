@@ -1,0 +1,31 @@
+.container {
+  background-color: #fafafa;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.blogs_content_container {
+  width: 80%;
+  /* max-width: 1500px; */
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.blogs_container {
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  column-gap: 10px;
+}
+
+@media screen and (max-width: 425px) {
+  .container{
+    overflow: hidden;
+  }
+}

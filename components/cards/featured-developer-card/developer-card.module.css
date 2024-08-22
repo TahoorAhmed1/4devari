@@ -1,0 +1,18 @@
+.card_body {
+  /* width: 95%; */
+  min-width: 146.67px;
+  min-height: 150px;
+  border: 1px solid #cdd8ea;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  transition: ease-in-out 200ms;
+}
+.card_body:hover {
+  transform: translate3d(0px, -3px, 0px);
+}
+.card_body img {
+  width: 80%;
+}

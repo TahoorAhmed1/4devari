@@ -1,0 +1,160 @@
+.card_body {
+  width: 240px;
+  min-width: 240px;
+  height: fit-content;
+  background: #ffffff;
+  /* border: 1px solid #dddbdb; */
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: ease-in-out 200ms;
+  animation: shake 1.2s ease-out infinite;
+  margin: auto;
+}
+/* .card_body:hover {
+  transform: translate3d(0px, -3px, 0px);
+} */
+.heart {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 10;
+  width: 22px;
+}
+.share {
+  position: absolute;
+  top: 15px;
+  right: 45px;
+  z-index: 10;
+  width: 22px;
+}
+.icons_container {
+  width: fit-content;
+  padding: 4px;
+  background-color: rgba(0, 0, 0, 0.72);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  column-gap: 10px;
+  bottom: 15px;
+  left: 15px;
+  z-index: 10;
+}
+.video {
+  z-index: 10;
+  width: 14px;
+}
+.camera {
+  z-index: 10;
+  width: 14px;
+}
+.single_tab {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 4px;
+}
+.single_tab p {
+  font-size: 11px;
+  color: white;
+}
+.tag {
+  position: absolute;
+  top: -11px;
+  left: 15px;
+  width: 50px;
+  z-index: 20;
+}
+.card_img {
+  height: 140px;
+  width: 100%;
+  position: relative;
+  border-radius: 20px;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.content_container {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.developer_logo {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 40px;
+}
+.content_section {
+  height: 90%;
+  width: 93%;
+}
+.property_title {
+  font-size: 13px;
+  font-family: "p-m";
+}
+.price {
+  color: var(--primary);
+  font-size: 14px;
+  margin-top: 4px;
+}
+.address {
+  font-family: "p-l";
+  font-size: 11px;
+}
+.description_text {
+  font-family: "p-r";
+  font-size: 10px;
+  margin-bottom: 5px;
+  margin-top: 4px;
+}
+.details_row {
+  width: 85%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+.details_row p {
+  font-size: 10px;
+  word-break: break-all;
+  font-family: "p-m";
+}
+.status_text {
+  font-size: 9px;
+  color: rgb(137, 137, 137);
+  font-family: "p-l";
+  margin-bottom: 10px;
+}
+.non_primary_btns {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+}
+.btns_container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .card_body{
+    min-width: auto;
+    width: 100%;
+    max-width: 240px;
+  }
+}

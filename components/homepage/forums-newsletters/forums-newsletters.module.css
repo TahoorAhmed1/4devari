@@ -1,0 +1,218 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.error_field {
+  border: 1px solid red !important;
+  border-radius: 100px !important;
+}
+.content_container {
+  width: 90%;
+  height: fit-content;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 50px;
+  max-width: 1800px;
+}
+.forums_container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 100%;
+  max-width: 1500px;
+}
+.cards_container {
+  width: 100%;
+  height: 80%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+}
+.newsletter_section {
+  width: 100%;
+  height: 500px;
+display: flex;
+align-items: center;
+justify-content: center;
+  column-gap: 20px;
+  max-width: 1500px;
+}
+.forum_btn {
+  /* width: 95% !important; */
+  height: 43px;
+  color: white;
+  background-color: #004439;
+  border-radius: 5px;
+  padding-left: 14px;
+  padding-right: 14px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: center;
+  transition: ease-in-out 200s;
+  column-gap: 10px;
+  border: 1px solid var(--primary);
+  cursor: pointer;
+}
+@media screen and (max-width:768px) {
+  .newsletter_section {
+    flex-direction: column;
+  }
+}
+.register_panel {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.register_panel img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 4;
+}
+.content {
+  position: absolute;
+  height: 100%;
+  width: 82%;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 15px;
+}
+.heading {
+  font-size: 22px;
+  line-height: 40px;
+  color: #ffffff;
+  font-family: "p-sb";
+}
+.sub_heading {
+  font-size: 14px;
+  color: #ffffff;
+  font-family: "p-r";
+}
+.btn {
+  width: 50%;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 100px;
+  transition: ease-in-out 200ms;
+  margin-bottom: 15px;
+}
+.btn p {
+  color: var(--primary);
+  font-size: 12px;
+  font-family: "p-m";
+  transition: ease-in-out 200ms;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--primary);
+}
+.btn:hover p {
+  color: white;
+}
+.content h2 {
+  font-size: 22px;
+  line-height: 40px;
+  color: #ffffff;
+  font-family: "p-sb";
+}
+.zilaay_video_panel {
+  width: 100%;
+  position: relative;
+  box-shadow: 0px 0px 30px grey;
+  height: 100%;
+}
+.video_bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+.newsletter_panel {
+  width: 100%;
+  height: 100%;
+  /* box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05); */
+  position: relative;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newsletter_content {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  row-gap: 15px;
+}
+.newsletter_bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  object-fit: contain;
+}
+.newsletter_title {
+  font-size: 28px;
+  color: #151515;
+  font-family: "p-sb";
+}
+.newsletter_description {
+  font-size: 16px;
+  font-family: "p-l";
+}
+.video_content {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+}
+.newsletter_content input {
+  width: 90%;
+  height: 40px;
+  background: #ffffff;
+  border: 1.5px solid #cdd8ea;
+  border-radius: 1000px;
+  margin-bottom: -10px;
+}
+.video_content p {
+  font-size: 24px;
+  color: #ffffff;
+  font-family: "p-sb";
+}
+.pause_btn {
+  width: 60px;
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    overflow: hidden;
+  }
+}

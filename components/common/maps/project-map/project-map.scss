@@ -1,0 +1,30 @@
+.project-map-wrapper {
+  position: relative;
+  height: 100%;
+  .map_btn_container {
+    position: absolute;
+    top: 10px;
+    right: 60px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    z-index: 10;
+    @media screen and (max-width: 1020px) {
+      display: none;
+    }
+    .btn {
+      background: #004439;
+      color: white;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      max-height: 40px;
+
+      &:hover {
+        cursor: pointer;
+        background-color: rgb(9, 93, 250);
+      }
+    }
+  }
+}

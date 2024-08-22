@@ -1,0 +1,27 @@
+// Common
+@import "../components/common/modals/property-advertise-modal/property-advertise-modal.scss";
+@import "../components/common/modals/property-contact-modal/property-modal.scss",
+  "../components/common/maps/property-map/property-map.scss",
+  "../components/common/maps/project-map/project-map.scss";
+@import "../components/cards/top_builder/top_builder.scss";
+@import "../components/common/modals/property-images-modal/property-img-modal.scss";
+@import "../components/singleProject-detail/components/project-detail.scss";
+@import "../components/co-working-ad-detail/components/coworking-detail.scss";
+@import "../components/co-living-ad-detail/components/coliving-detail.scss";
+@import "../components/coming-soon/coming.scss";
+@import "../components/agencyProfile-detail/agency-detail.scss";
+@import "../components/agency_output/search_output.scss";
+@import "../components/agency-card/agency-card.scss";
+@import "../components/dashboard-components/account-setting/account_setting.scss";
+@import "../components/dashboard-components/my-listing/myListing.scss";
+@import "../components/dashboard-components/reports/summary/report_summary.scss";
+@import "../components/dashboard-components/reports/report_reach/reach.scss";
+@import "../components/dashboard-components/my-orders/orders.scss";
+@import "../components/singleProject-detail/right_panel/right_panel.scss";
+@import "../components/common/pagination/pagination.scss";
+
+@import "../components/advertisepage/agencyplans/agencyplans.scss";
+@import "../components/advertisepage/builderplans/builderplans.scss";
+@import "../components/advertisepage/ownerplans/ownerplans.scss";
+
+@import "../components/dashboard-components/user/user.scss";

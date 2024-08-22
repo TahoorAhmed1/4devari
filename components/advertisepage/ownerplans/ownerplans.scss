@@ -1,0 +1,123 @@
+.owner_plans_container {
+  .main_heading {
+    font-size: 24px;
+    padding-bottom: 80px;
+  }
+  .details_container {
+    width: 85%;
+    margin: auto;
+    position: relative;
+    .plan_card_heading {
+      padding: 20px 0px;
+      text-align: center;
+      font-weight: 600;
+      font-size: 20px;
+    }
+    .owner_plans {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;      
+      gap: 30px;
+
+      .plan_card {
+        background-color: white;
+        position: relative;
+        border: 1px solid #15151526;
+        border-radius: 25px;
+        padding: 70px 30px 40px 30px;
+        box-shadow: -10px 10px 50px 0px #1515151A;
+        
+
+        .style1 {
+          background-color: #d6caab;
+          border: 2px solid #8a7234;
+        }
+        .style2 {
+          background-color: #fdd1d1;
+          border: 2px solid #ff0000;
+        }
+        .style3 {
+          background-color: #a8d9d1;
+          border: 2px solid #004439;
+        }
+        .circle_img {
+            cursor: pointer;
+          box-shadow: 0px 0px 25px 0px #0000001a;
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          top: -50px;
+        }
+        .cards_lists {
+            height: 182px;
+            .list_inner_data {
+              border-bottom: 1px solid #15151526;
+          .list_data {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 0px;
+            border-top: 1px solid #15151526;
+            // border-bottom: 1px solid #15151526;
+            img {
+            }
+            p {
+                font-size: 14px;
+            }
+          }
+        }
+        }
+        .prices_data {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 60px 0px 30px 0px;
+          span {
+            font-weight: 500;
+            font-size: 15px;
+          }
+          h3 {
+            color: #43b763;
+            font-size: 24px;
+          }
+          .color_change {
+            color: #15151580;
+          }
+        
+        }
+        .plans_buy_btn {
+          width: 100%;
+          background-color: #004439;
+          color: white;
+          border-radius: 10px;
+          height: 43px;
+          outline: none;
+          border: none;
+          cursor: pointer;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1150px) {
+    .owner_plans {
+        grid-template-columns: 1fr 1fr !important;
+        row-gap: 80px !important;
+        
+    }
+    .plan_card {
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .owner_plans {
+        grid-template-columns: 1fr !important;
+    }
+}
