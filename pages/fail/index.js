@@ -23,7 +23,12 @@ const PaymentFail = () => {
           </a>{" "}
           if the problem persists.
         </p>
-        <button className={classes.retryButton}>Retry Payment</button>
+        <Link
+          href={"/dashboard/superadmin/my-orders"}
+          className={classes.retryButton}
+        >
+          Retry Payment
+        </Link>
       </div>
     </div>
   );

@@ -13,8 +13,8 @@ const MyOrders = () => {
   const [listCollapse, setListCollapse] = useState(true);
   const [refreshCollapse, setRefreshCollapse] = useState(true);
   const [token, setToken] = useState("");
-  const merchant_id = 21829;
-  const secured_key = "aXKfkAMycqzu3y4EJEDA1G3NAn";
+  const merchant_id = 102;
+  const secured_key = "zWHjBp2AlttNu1sK";
 
   useEffect(() => {
     getAccessToken(merchant_id, secured_key);

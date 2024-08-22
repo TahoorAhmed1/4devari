@@ -2,6 +2,7 @@ import React from "react";
 import classes from "./success.module.css";
 import success from "../../public/assets/icons/success.png";
 import Image from "next/image";
+import Link from "next/link";
 const PaymentThankYou = () => {
   return (
     <div className={classes.thankyouContainer}>
@@ -27,7 +28,12 @@ const PaymentThankYou = () => {
           </a>
           .
         </p>
-        <button className={classes.thankyouButton}>Continue Shopping</button>
+        <Link
+          href={"/dashboard/superadmin/overview"}
+          className={classes.thankyouButton}
+        >
+          Continue Shopping
+        </Link>
       </div>
     </div>
   );
