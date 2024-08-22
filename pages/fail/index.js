@@ -34,5 +34,4 @@ const PaymentFail = () => {
     </div>
   );
 };
-
 export default PaymentFail;
